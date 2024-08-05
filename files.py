@@ -9,9 +9,9 @@ print('walk_dir (absolute) = ' + os.path.abspath(walk_dir))
 # print(os.walk(walk_dir))
 # print(list(os.walk(walk_dir)))
 
-all_dirs = list(os.walk(walk_dir))
+#all_dirs = list(os.walk(walk_dir))
 
-for root, subdirs, files in all_dirs:
+for root, subdirs, files in os.walk(walk_dir):
     print('root: ' + root)
     print("subdirs: " + str(subdirs))
     print("files: " + str(files))
