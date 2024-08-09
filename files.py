@@ -1,7 +1,8 @@
 import os
 import sys
 
-walk_dir = "/home/prog/tmp" #sys.argv[1]
+walk_dir = sys.argv[1]
+#walk_dir = "/home/prog/tmp" #sys.argv[1]
 
 print('walk_dir = ' + walk_dir)
 print('walk_dir (absolute) = ' + os.path.abspath(walk_dir))
